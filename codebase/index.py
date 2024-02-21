@@ -22,7 +22,7 @@ def build_nodes_from_text(text):
     return nodes
 
 def build_embeddings(nodes):
-    api_key = "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"
+    api_key = ""
     os.environ['OPENAI_API_KEY'] =api_key
     embed_model = OpenAIEmbedding(api_key=api_key)
     for node in nodes:
